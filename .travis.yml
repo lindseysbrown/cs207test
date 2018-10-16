@@ -6,3 +6,5 @@ before_install:
         - pip install coveralls  
 script:
         - pytest
+after_success:
+        - coveralls
